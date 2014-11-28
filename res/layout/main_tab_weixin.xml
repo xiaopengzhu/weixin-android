@@ -70,14 +70,14 @@
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:paddingLeft="5dp"
-                android:src="@drawable/xiaohei" />
+                android:src="@drawable/zxp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/head"
                 android:padding="7dp"
-                android:text="小黑"
+                android:text="Z.X.P"
                 android:textColor="#000" />
             <TextView
                 android:layout_width="wrap_content"
@@ -92,7 +92,7 @@
                 android:layout_toRightOf="@id/head"
                 android:layout_alignParentBottom="true"
                 android:padding="7dp"
-                android:text="尼滚...."
+                android:text="...."
                 android:textColor="#666" />
 
             

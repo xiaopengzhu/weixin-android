@@ -80,20 +80,20 @@ public class MainWeixin extends Activity {
         //Log.i("info", "获取的屏幕分辨率为" + one + two + three + "X" + displayHeight);
         
         //InitImageView();//使用动画
-      //将要分页显示的View装入数组中
+        //将要分页显示的View装入数组中
         LayoutInflater mLi = LayoutInflater.from(this);
         View view1 = mLi.inflate(R.layout.main_tab_weixin, null);
         View view2 = mLi.inflate(R.layout.main_tab_address, null);
         View view3 = mLi.inflate(R.layout.main_tab_friends, null);
         View view4 = mLi.inflate(R.layout.main_tab_settings, null);
         
-      //每个页面的view数据
+        //每个页面的view数据
         final ArrayList<View> views = new ArrayList<View>();
         views.add(view1);
         views.add(view2);
         views.add(view3);
         views.add(view4);
-      //填充ViewPager的数据适配器
+        //填充ViewPager的数据适配器
         PagerAdapter mPagerAdapter = new PagerAdapter() {
 			
 			@Override

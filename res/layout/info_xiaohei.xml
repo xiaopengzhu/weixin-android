@@ -65,7 +65,7 @@
         			android:layout_alignParentLeft="true"        			
         			android:layout_marginLeft="8dp"
         			android:padding="8dp"
-        			android:src="@drawable/xiaohei"
+        			android:src="@drawable/zxp"
         			android:onClick="head_xiaohei" /> 
         			
             <TextView
@@ -75,7 +75,7 @@
         			android:layout_alignParentLeft="true"
         			android:layout_marginLeft="95dp"
         			android:padding="15dp" 
-        			android:text="黑暗游侠"
+        			android:text="Z.X.P"
         			android:textSize="18sp"		
 					android:textColor="#000" />
             <TextView
@@ -85,7 +85,7 @@
         			android:layout_alignParentBottom="true"
         			android:layout_marginLeft="95dp"
         			android:padding="15dp" 
-        			android:text="微信号：heianyouxia"
+        			android:text="微信号：xp_zhu_com"
         			android:textSize="15sp"		
 					android:textColor="#333" /> 
         </RelativeLayout>
@@ -117,7 +117,7 @@
         			android:layout_alignParentLeft="true"
         			android:layout_marginLeft="80dp"
         			android:padding="8dp" 
-        			android:text="魔兽世界"
+        			android:text="DNF"
         			android:textSize="15sp"		
 					android:textColor="#000" /> 					
    		  	</RelativeLayout>
@@ -142,7 +142,7 @@
         			android:layout_alignParentLeft="true"
         			android:layout_marginLeft="80dp"
         			android:padding="8dp" 
-        			android:text="我认为我是dota里面最好看的，你有意见？"
+        			android:text="有钱才能任性， 没钱只能随缘"
         			android:textSize="15sp"		
 					android:textColor="#000" /> 			
       		</RelativeLayout>
@@ -167,7 +167,7 @@
         			android:layout_alignParentLeft="true"
         			android:layout_marginLeft="80dp"
         			android:padding="8dp" 
-        			android:text="110120119114"
+        			android:text="123456789"
         			android:textSize="15sp"		
 					android:textColor="#000" /> 			
       		</RelativeLayout>
@@ -194,7 +194,7 @@
         			android:layout_alignParentLeft="true"
         			android:layout_marginLeft="80dp"
         			android:padding="8dp"
-        			android:src="@drawable/xiaohei" />  
+        			android:src="@drawable/zxp" />  
         		<ImageView
       		    	android:layout_width="wrap_content"
         			android:layout_height="wrap_content"        	     	
@@ -204,7 +204,7 @@
         			
         			android:layout_marginLeft="0dp"
         			android:padding="8dp"
-        			android:src="@drawable/renma" />  	
+        			android:src="@drawable/beauty" />  	
         			
         		<ImageView
             		android:layout_width="wrap_content"

@@ -34,7 +34,7 @@
 		           android:onClick="head_xiaohei"
 		           android:layout_alignParentLeft="true" 
                    android:layout_alignParentTop="true" 
-		           android:background="@drawable/xiaohei"/>
+		           android:background="@drawable/zxp"/>
  				
  				<TextView 
 	            android:id="@+id/tv_chatcontent" 

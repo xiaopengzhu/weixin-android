@@ -38,7 +38,7 @@ public class Whatsnew extends Activity {
         mPage4 = (ImageView)findViewById(R.id.page4);
         mPage5 = (ImageView)findViewById(R.id.page5);
         
-      //将要分页显示的View装入数组中
+        //将要分页显示的View装入数组中
         LayoutInflater mLi = LayoutInflater.from(this);
         View view1 = mLi.inflate(R.layout.whats1, null);
         View view2 = mLi.inflate(R.layout.whats2, null);
@@ -47,7 +47,7 @@ public class Whatsnew extends Activity {
         View view5 = mLi.inflate(R.layout.whats5, null);
         View view6 = mLi.inflate(R.layout.whats6, null);
         
-      //每个页面的view数据
+        //每个页面的view数据
         final ArrayList<View> views = new ArrayList<View>();
         views.add(view1);
         views.add(view2);

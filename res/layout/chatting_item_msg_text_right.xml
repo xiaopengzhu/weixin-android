@@ -36,7 +36,7 @@
 	           android:focusable="false" 
 	           android:layout_alignParentRight="true" 
                android:layout_alignParentTop="true" 
-	           android:background="@drawable/renma"/>
+	           android:background="@drawable/beauty"/>
  				
  				<TextView 
 	            android:id="@+id/tv_chatcontent" 

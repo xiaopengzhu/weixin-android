@@ -54,9 +54,9 @@ public class ChatActivity extends Activity implements OnClickListener{
     	mEditTextContent = (EditText) findViewById(R.id.et_sendmessage);
     }
     
-    private String[]msgArray = new String[]{"有大吗", "有！你呢？", "我也有", "那上吧", 
-    										"打啊！你放大啊", "你tm咋不放大呢？留大抢人头那！Cao的。你个菜b",
-    										"2B不解释", "尼滚....",};
+    private String[]msgArray = new String[]{"同志们好", "首长好", "同志们辛苦了", "为人民币服务", 
+    										"TEST", "有钱就是这么任性！",
+    										"JAVA真TMD臃肿", "....",};
     
     private String[]dataArray = new String[]{"2012-09-01 18:00", "2012-09-01 18:10", 
     										"2012-09-01 18:11", "2012-09-01 18:20", 
@@ -71,10 +71,10 @@ public class ChatActivity extends Activity implements OnClickListener{
     		entity.setDate(dataArray[i]);
     		if (i % 2 == 0)
     		{
-    			entity.setName("小黑");
+    			entity.setName("Z.X.P");
     			entity.setMsgType(true);
     		}else{
-    			entity.setName("人马");
+    			entity.setName("美女");
     			entity.setMsgType(false);
     		}
     		
@@ -109,7 +109,7 @@ public class ChatActivity extends Activity implements OnClickListener{
 		{
 			ChatMsgEntity entity = new ChatMsgEntity();
 			entity.setDate(getDate());
-			entity.setName("人马");
+			entity.setName("美女");
 			entity.setMsgType(false);
 			entity.setText(contString);
 			
