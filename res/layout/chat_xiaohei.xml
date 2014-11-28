@@ -7,11 +7,11 @@
     
     <RelativeLayout 
         android:id="@+id/rl_layout"
-  			android:layout_width="fill_parent"
-  			android:layout_height="45dp"
-  			android:background="@drawable/title_bar"
-  			android:gravity="center_vertical"  > 
-  			<Button
+              android:layout_width="fill_parent"
+              android:layout_height="45dp"
+              android:background="@drawable/title_bar"
+              android:gravity="center_vertical"  > 
+              <Button
             android:id="@+id/btn_back"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
@@ -21,28 +21,28 @@
             android:textColor="#fff"
             android:onClick="chat_back"
             android:background="@drawable/title_btn_back"
-		    />    
-      		<TextView
-        		android:layout_width="wrap_content" 
-        		android:layout_height="wrap_content" 
-        		android:text="Z.X.P"
-        		android:layout_centerInParent="true"
-        		android:textSize="20sp"		
-				android:textColor="#ffffff" /> 
-			<ImageButton 
-			    android:id="@+id/right_btn"
-			    android:layout_width="67dp" 
-        		android:layout_height="wrap_content"
-        		android:layout_alignParentRight="true" 
-        		android:layout_centerVertical="true"
-        		android:layout_marginRight="5dp"
-        		android:src="@drawable/mm_title_btn_contact_normal"
-				android:background="@drawable/title_btn_right"
-				
-			    />      
-		</RelativeLayout>
+            />    
+              <TextView
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="Z.X.P"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"        
+                android:textColor="#ffffff" /> 
+            <ImageButton 
+                android:id="@+id/right_btn"
+                android:layout_width="67dp" 
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" 
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/mm_title_btn_contact_normal"
+                android:background="@drawable/title_btn_right"
+                
+                />      
+        </RelativeLayout>
     
-	  
+      
    <RelativeLayout
         android:id="@+id/rl_bottom"
         android:layout_width="fill_parent"
@@ -82,7 +82,7 @@
     android:layout_above="@id/rl_bottom"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"    
-	android:divider="@null"
+    android:divider="@null"
     android:dividerHeight="5dp"
     android:stackFromBottom="true"
     android:scrollbarStyle="outsideOverlay" 

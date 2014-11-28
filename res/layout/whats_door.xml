@@ -21,13 +21,13 @@
             android:src="@drawable/w_right" />
         <TextView 
             android:id="@+id/anim_text"
-        	android:layout_width="fill_parent" 
-        	android:layout_height="wrap_content" 
-        	android:gravity="center" 
-        	android:layout_alignParentTop="true"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:gravity="center" 
+            android:layout_alignParentTop="true"
             android:layout_marginTop="35dp"
-        	android:text=" \n \n微信，是一个生活方式\n \n "         	
-        	android:textSize="22sp"
-        	android:textColor="#fff" />
+            android:text=" \n \n微信，是一个生活方式\n \n "             
+            android:textSize="22sp"
+            android:textColor="#fff" />
 
     </RelativeLayout>

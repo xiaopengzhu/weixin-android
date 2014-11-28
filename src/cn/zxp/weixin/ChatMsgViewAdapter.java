@@ -13,13 +13,13 @@ import java.util.List;
 
 @SuppressLint("InflateParams")
 public class ChatMsgViewAdapter extends BaseAdapter {
-	
-	public static interface IMsgViewType
-	{
-		int IMVT_COM_MSG = 0;
-		int IMVT_TO_MSG = 1;
-	}
-	
+    
+    public static interface IMsgViewType
+    {
+        int IMVT_COM_MSG = 0;
+        int IMVT_TO_MSG = 1;
+    }
+    
     private List<ChatMsgEntity> coll;
 
     private LayoutInflater mInflater;
@@ -43,59 +43,59 @@ public class ChatMsgViewAdapter extends BaseAdapter {
     
 
 
-	public int getItemViewType(int position) {
-		// TODO Auto-generated method stub
-	 	ChatMsgEntity entity = coll.get(position);
-	 	
-	 	if (entity.getMsgType())
-	 	{
-	 		return IMsgViewType.IMVT_COM_MSG;
-	 	}else{
-	 		return IMsgViewType.IMVT_TO_MSG;
-	 	}
-	 	
-	}
+    public int getItemViewType(int position) {
+        // TODO Auto-generated method stub
+         ChatMsgEntity entity = coll.get(position);
+         
+         if (entity.getMsgType())
+         {
+             return IMsgViewType.IMVT_COM_MSG;
+         }else{
+             return IMsgViewType.IMVT_TO_MSG;
+         }
+         
+    }
 
 
-	public int getViewTypeCount() {
-		// TODO Auto-generated method stub
-		return 2;
-	}
-	
-	
+    public int getViewTypeCount() {
+        // TODO Auto-generated method stub
+        return 2;
+    }
+    
+    
     public View getView(int position, View convertView, ViewGroup parent) {
-    	
-    	ChatMsgEntity entity = coll.get(position);
-    	boolean isComMsg = entity.getMsgType();
-    		
-    	ViewHolder viewHolder = null;	
-	    if (convertView == null)
-	    {
-	    	  if (isComMsg)
-			  {
-				  convertView = mInflater.inflate(R.layout.chatting_item_msg_text_left, null);
-			  }else{
-				  convertView = mInflater.inflate(R.layout.chatting_item_msg_text_right, null);
-			  }
+        
+        ChatMsgEntity entity = coll.get(position);
+        boolean isComMsg = entity.getMsgType();
+            
+        ViewHolder viewHolder = null;    
+        if (convertView == null)
+        {
+              if (isComMsg)
+              {
+                  convertView = mInflater.inflate(R.layout.chatting_item_msg_text_left, null);
+              }else{
+                  convertView = mInflater.inflate(R.layout.chatting_item_msg_text_right, null);
+              }
 
-	    	  viewHolder = new ViewHolder();
-			  viewHolder.tvSendTime = (TextView) convertView.findViewById(R.id.tv_sendtime);
-			  viewHolder.tvUserName = (TextView) convertView.findViewById(R.id.tv_username);
-			  viewHolder.tvContent = (TextView) convertView.findViewById(R.id.tv_chatcontent);
-			  viewHolder.isComMsg = isComMsg;
-			  
-			  convertView.setTag(viewHolder);
-	    }else{
-	        viewHolder = (ViewHolder) convertView.getTag();
-	    }
-	
-	    
-	    
-	    viewHolder.tvSendTime.setText(entity.getDate());
-	    viewHolder.tvUserName.setText(entity.getName());
-	    viewHolder.tvContent.setText(entity.getText());
-	    
-	    return convertView;
+              viewHolder = new ViewHolder();
+              viewHolder.tvSendTime = (TextView) convertView.findViewById(R.id.tv_sendtime);
+              viewHolder.tvUserName = (TextView) convertView.findViewById(R.id.tv_username);
+              viewHolder.tvContent = (TextView) convertView.findViewById(R.id.tv_chatcontent);
+              viewHolder.isComMsg = isComMsg;
+              
+              convertView.setTag(viewHolder);
+        }else{
+            viewHolder = (ViewHolder) convertView.getTag();
+        }
+    
+        
+        
+        viewHolder.tvSendTime.setText(entity.getDate());
+        viewHolder.tvUserName.setText(entity.getName());
+        viewHolder.tvContent.setText(entity.getText());
+        
+        return convertView;
     }
     
 

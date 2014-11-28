@@ -42,7 +42,7 @@
               android:textColor="#fff"
               android:background="@drawable/btn_style_green"
               android:gravity="center"
-			  android:onClick="exitbutton0" />
+              android:onClick="exitbutton0" />
             
             <Button
               android:id="@+id/exitBtn1"
@@ -54,7 +54,7 @@
               android:textColor="#333"
               android:background="@drawable/btn_style_white"
               android:gravity="center"
-			  android:onClick="exitbutton1" />
+              android:onClick="exitbutton1" />
         </LinearLayout>
 
     </LinearLayout>

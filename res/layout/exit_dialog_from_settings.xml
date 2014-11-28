@@ -9,13 +9,13 @@
              android:gravity="center_horizontal" >
         
        <LinearLayout
-        	android:id="@+id/exit_layout2"
-        	android:layout_width="fill_parent"
-        	android:layout_height="wrap_content"
-        	android:gravity="center_horizontal"
-        	android:layout_gravity="bottom"
-        	android:orientation="vertical"
-        	android:background="@drawable/exit_dialog_bg" >
+            android:id="@+id/exit_layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:background="@drawable/exit_dialog_bg" >
 
         <TextView
             android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
               android:layout_marginRight="10dp"
               android:background="@drawable/btn_style_alert_dialog_special"
               android:gravity="center"
-			  android:onClick="exitbutton0" />
+              android:onClick="exitbutton0" />
             
             <Button
               android:id="@+id/exitBtn1"
@@ -53,7 +53,7 @@
               android:textColor="#fff"
               android:background="@drawable/btn_style_alert_dialog_cancel"
               android:gravity="center"
-			  android:onClick="exitbutton1" />
+              android:onClick="exitbutton1" />
            
        </LinearLayout>
 

@@ -38,7 +38,7 @@ public class ChatMsgEntity {
     }
 
     public void setMsgType(boolean isComMsg) {
-    	isComMeg = isComMsg;
+        isComMeg = isComMsg;
     }
 
     public ChatMsgEntity() {

@@ -17,14 +17,14 @@ import android.widget.ListView;
 public class ChatActivity extends Activity implements OnClickListener{
     /** Called when the activity is first created. */
 
-	private Button mBtnSend;
-	private Button mBtnBack;
-	private EditText mEditTextContent;
-	private ListView mListView;
-	private ChatMsgViewAdapter mAdapter;
-	private List<ChatMsgEntity> mDataArrays = new ArrayList<ChatMsgEntity>();
-	
-	
+    private Button mBtnSend;
+    private Button mBtnBack;
+    private EditText mEditTextContent;
+    private ListView mListView;
+    private ChatMsgViewAdapter mAdapter;
+    private List<ChatMsgEntity> mDataArrays = new ArrayList<ChatMsgEntity>();
+    
+    
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chat_xiaohei);
@@ -38,83 +38,83 @@ public class ChatActivity extends Activity implements OnClickListener{
     
     public void initView()
     {
-    	mListView = (ListView) findViewById(R.id.listview);
-    	mBtnSend = (Button) findViewById(R.id.btn_send);
-    	mBtnSend.setOnClickListener(this);
-    	mBtnBack = (Button) findViewById(R.id.btn_back);
-    	mBtnBack.setOnClickListener(this);
-    	
-    	mEditTextContent = (EditText) findViewById(R.id.et_sendmessage);
+        mListView = (ListView) findViewById(R.id.listview);
+        mBtnSend = (Button) findViewById(R.id.btn_send);
+        mBtnSend.setOnClickListener(this);
+        mBtnBack = (Button) findViewById(R.id.btn_back);
+        mBtnBack.setOnClickListener(this);
+        
+        mEditTextContent = (EditText) findViewById(R.id.et_sendmessage);
     }
     
     private String[]msgArray = new String[]{"同志们好", "首长好", "同志们辛苦了", "为人民币服务", 
-    										"TEST", "有钱就是这么任性！",
-    										"JAVA真TMD臃肿", "....",};
+                                            "TEST", "有钱就是这么任性！",
+                                            "JAVA真TMD臃肿", "....",};
     
     private String[]dataArray = new String[]{"2014-09-01 18:00", "2014-09-01 18:10", 
-    										"2014-09-01 18:11", "2014-09-01 18:20", 
-    										"2014-09-01 18:30", "2014-09-01 18:35", 
-    										"2014-09-01 18:40", "2014-09-01 18:50"}; 
+                                            "2014-09-01 18:11", "2014-09-01 18:20", 
+                                            "2014-09-01 18:30", "2014-09-01 18:35", 
+                                            "2014-09-01 18:40", "2014-09-01 18:50"}; 
     private final static int COUNT = 8;
     public void initData()
     {
-    	for(int i = 0; i < COUNT; i++)
-    	{
-    		ChatMsgEntity entity = new ChatMsgEntity();
-    		entity.setDate(dataArray[i]);
-    		if (i % 2 == 0)
-    		{
-    			entity.setName("Z.X.P");
-    			entity.setMsgType(true);
-    		}else{
-    			entity.setName("美女");
-    			entity.setMsgType(false);
-    		}
-    		
-    		entity.setText(msgArray[i]);
-    		mDataArrays.add(entity);
-    	}
+        for(int i = 0; i < COUNT; i++)
+        {
+            ChatMsgEntity entity = new ChatMsgEntity();
+            entity.setDate(dataArray[i]);
+            if (i % 2 == 0)
+            {
+                entity.setName("Z.X.P");
+                entity.setMsgType(true);
+            }else{
+                entity.setName("美女");
+                entity.setMsgType(false);
+            }
+            
+            entity.setText(msgArray[i]);
+            mDataArrays.add(entity);
+        }
 
-    	mAdapter = new ChatMsgViewAdapter(this, mDataArrays);
-		mListView.setAdapter(mAdapter);
-		
+        mAdapter = new ChatMsgViewAdapter(this, mDataArrays);
+        mListView.setAdapter(mAdapter);
+        
     }
 
 
-	@Override
-	public void onClick(View v) {
-		// TODO Auto-generated method stub
-		switch(v.getId())
-		{
-		case R.id.btn_send:
-			send();
-			break;
-		case R.id.btn_back:
-			finish();
-			break;
-		}
-	}
-	
-	private void send()
-	{
-		String contString = mEditTextContent.getText().toString();
-		if (contString.length() > 0)
-		{
-			ChatMsgEntity entity = new ChatMsgEntity();
-			entity.setDate(getDate());
-			entity.setName("美女");
-			entity.setMsgType(false);
-			entity.setText(contString);
-			
-			mDataArrays.add(entity);
-			mAdapter.notifyDataSetChanged();
-			
-			mEditTextContent.setText("");
-			
-			mListView.setSelection(mListView.getCount() - 1);
-		}
-	}
-	
+    @Override
+    public void onClick(View v) {
+        // TODO Auto-generated method stub
+        switch(v.getId())
+        {
+        case R.id.btn_send:
+            send();
+            break;
+        case R.id.btn_back:
+            finish();
+            break;
+        }
+    }
+    
+    private void send()
+    {
+        String contString = mEditTextContent.getText().toString();
+        if (contString.length() > 0)
+        {
+            ChatMsgEntity entity = new ChatMsgEntity();
+            entity.setDate(getDate());
+            entity.setName("美女");
+            entity.setMsgType(false);
+            entity.setText(contString);
+            
+            mDataArrays.add(entity);
+            mAdapter.notifyDataSetChanged();
+            
+            mEditTextContent.setText("");
+            
+            mListView.setSelection(mListView.getCount() - 1);
+        }
+    }
+    
     private String getDate() {
         Calendar c = Calendar.getInstance();
 
@@ -127,14 +127,14 @@ public class ChatActivity extends Activity implements OnClickListener{
         
         StringBuffer sbBuffer = new StringBuffer();
         sbBuffer.append(year + "-" + month + "-" + day + " " + hour + ":" + mins); 
-        						
-        						
+                                
+                                
         return sbBuffer.toString();
     }
     
     
     public void head_xiaohei(View v) {     //标题栏 返回按钮
-    	Intent intent = new Intent (ChatActivity.this,InfoXiaohei.class);			
-		startActivity(intent);	
+        Intent intent = new Intent (ChatActivity.this,InfoXiaohei.class);            
+        startActivity(intent);    
       } 
 }
