@@ -31,8 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"           
             android:layout_marginTop="33dp"
-            android:layout_marginBottom="8dp"
-             >
+            android:layout_marginBottom="8dp" >
             
             <Button
               android:id="@+id/exitBtn0"
@@ -43,8 +42,7 @@
               android:textColor="#fff"
               android:background="@drawable/btn_style_green"
               android:gravity="center"
-			  android:onClick="exitbutton0"
-              />
+			  android:onClick="exitbutton0" />
             
             <Button
               android:id="@+id/exitBtn1"
@@ -56,8 +54,7 @@
               android:textColor="#333"
               android:background="@drawable/btn_style_white"
               android:gravity="center"
-			  android:onClick="exitbutton1"
-              />
+			  android:onClick="exitbutton1" />
         </LinearLayout>
 
     </LinearLayout>

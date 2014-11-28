@@ -185,8 +185,8 @@ public final class R {
         public static final int welcome=0x7f020098;
         public static final int whats_new_start_btn_normal=0x7f020099;
         public static final int whats_new_start_btn_pressed=0x7f02009a;
-        public static final int xiaohei_big=0x7f02009b;
-        public static final int zxp=0x7f02009c;
+        public static final int zxp=0x7f02009b;
+        public static final int zxp_big=0x7f02009c;
     }
     public static final class id {
         public static final int add_friend=0x7f090011;

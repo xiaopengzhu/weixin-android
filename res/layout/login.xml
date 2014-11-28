@@ -28,8 +28,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="#ffffff"
-            android:text="登录"
-           />
+            android:text="登录" />
         
     </RelativeLayout>
 	<EditText 
@@ -63,8 +62,7 @@
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
 	    android:layout_marginTop="20dp"
-	    android:layout_below="@+id/login_passwd_edit"
-	    >
+	    android:layout_below="@+id/login_passwd_edit" >
 	    <Button
 	        android:id="@+id/forget_passwd" 
 	        android:layout_width="wrap_content"
@@ -75,8 +73,7 @@
 	        android:textSize="16sp"
 	        android:textColor="#00f"
 	        android:background="#0000"
-	        android:onClick="login_pw"
-	        />
+	        android:onClick="login_pw" />
 	     <Button
 	        android:id="@+id/login_login_btn"
 	        android:layout_width="90dp"
@@ -87,7 +84,6 @@
 	        android:background="@drawable/btn_style_green"
 	        android:textColor="#ffffff"
 	        android:textSize="18sp"
-	        android:onClick="login_mainweixin"
-	        />
+	        android:onClick="login_mainweixin" />
 	</RelativeLayout>
 </RelativeLayout>

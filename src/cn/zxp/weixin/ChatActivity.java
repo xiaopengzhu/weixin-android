@@ -14,13 +14,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
-
-/**
- * 
- * @author geniuseoe2012
- *  更多精彩，请关注我的CSDN博客http://blog.csdn.net/geniuseoe2012
- *  android开发交流群：200102476
- */
 public class ChatActivity extends Activity implements OnClickListener{
     /** Called when the activity is first created. */
 
@@ -58,10 +51,10 @@ public class ChatActivity extends Activity implements OnClickListener{
     										"TEST", "有钱就是这么任性！",
     										"JAVA真TMD臃肿", "....",};
     
-    private String[]dataArray = new String[]{"2012-09-01 18:00", "2012-09-01 18:10", 
-    										"2012-09-01 18:11", "2012-09-01 18:20", 
-    										"2012-09-01 18:30", "2012-09-01 18:35", 
-    										"2012-09-01 18:40", "2012-09-01 18:50"}; 
+    private String[]dataArray = new String[]{"2014-09-01 18:00", "2014-09-01 18:10", 
+    										"2014-09-01 18:11", "2014-09-01 18:20", 
+    										"2014-09-01 18:30", "2014-09-01 18:35", 
+    										"2014-09-01 18:40", "2014-09-01 18:50"}; 
     private final static int COUNT = 8;
     public void initData()
     {

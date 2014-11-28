@@ -1,4 +1,3 @@
-
 package cn.zxp.weixin;
 
 public class ChatMsgEntity {

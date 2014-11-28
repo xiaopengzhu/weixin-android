@@ -3,8 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:background="#111"
-    >
+    android:background="#111" >
     
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -34,8 +33,7 @@
             		android:layout_height="wrap_content"
             		android:layout_alignParentBottom="true"
             		android:layout_centerHorizontal="true"             			        
-            		android:src="@drawable/shake_logo_up"
-            		 />                
+            		android:src="@drawable/shake_logo_up" />                
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/shakeImgDown"
@@ -46,8 +44,7 @@
             		android:layout_width="wrap_content"
             		android:layout_height="wrap_content"
             		android:layout_centerHorizontal="true"             			        
-            		android:src="@drawable/shake_logo_down"
-            		 />                
+            		android:src="@drawable/shake_logo_down" />                
             </RelativeLayout>	
         </LinearLayout>
     </RelativeLayout>
@@ -82,8 +79,7 @@
         		android:layout_marginRight="5dp"
         		android:src="@drawable/mm_title_btn_menu"
 				android:background="@drawable/title_btn_right"
-				android:onClick="linshi" 
-			    />      
+				android:onClick="linshi" />      
 	</RelativeLayout>
     
 
@@ -96,8 +92,7 @@
         <Button
             android:id="@+id/handle"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"     
-                  
+            android:layout_height="wrap_content"    
             android:background="@drawable/shake_report_dragger_up" />
         <LinearLayout
             android:id="@+id/content"

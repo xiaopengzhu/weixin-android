@@ -1,6 +1,5 @@
 package cn.zxp.weixin;
 
-
 import java.util.ArrayList;
 
 import android.os.Bundle;

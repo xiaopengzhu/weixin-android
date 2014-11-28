@@ -1,7 +1,5 @@
 package cn.zxp.weixin;
 
-
-
 import android.os.Bundle;
 import android.os.Handler;
 import android.app.Activity;

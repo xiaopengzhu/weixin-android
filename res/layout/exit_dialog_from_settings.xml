@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"       
-        >
-
+        android:layout_height="fill_parent" >
+        
         <LinearLayout
              android:layout_width="fill_parent"
              android:layout_height="fill_parent"  
-            android:gravity="center_horizontal"
-             >
+             android:gravity="center_horizontal" >
         
        <LinearLayout
         	android:id="@+id/exit_layout2"
@@ -40,8 +38,7 @@
               android:layout_marginRight="10dp"
               android:background="@drawable/btn_style_alert_dialog_special"
               android:gravity="center"
-			  android:onClick="exitbutton0"
-              />
+			  android:onClick="exitbutton0" />
             
             <Button
               android:id="@+id/exitBtn1"
@@ -56,8 +53,7 @@
               android:textColor="#fff"
               android:background="@drawable/btn_style_alert_dialog_cancel"
               android:gravity="center"
-			  android:onClick="exitbutton1"
-              />
+			  android:onClick="exitbutton1" />
            
        </LinearLayout>
 
